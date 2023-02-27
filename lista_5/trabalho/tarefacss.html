@@ -1,86 +1,26 @@
 <html>
   <head>
     <title>Tudo Sobre CSS</title>
-    <style>
-      body {
-        background-image: url("../imagens/bgtile-css.gif");
-        font: 12px Verdana, Arial, Helvetica, sans-serif;
-        color: black;
-        margin-top: 20px;
-        margin-bottom: 20px;
-        margin-left: 40px;
-        margin-right: 40px;
-      }
-      a:link {
-        color: #336699;
-      }
-
-      a:visited {
-        color: #666666;
-      }
-
-      a:hover {
-        color: #663366;
-        text-decoration: none;
-      }
-
-      a:active {
-        color: #663300;
-      }
-
-      h1, h2, h3 {
-        font-family: Georgia, “Times New Roman”, Times, serif;
-      }
-      h1 {
-        text-align: center;
-        font-size: 36px;
-        color: #448888;
-      }
-      h2 {
-        font-size: 18px;
-        color: #226666;
-      }
-      h3 {
-        font-size: 14px;
-        color: #333333;
-      }
-      p {
-        line-height: 1.4em;
-      }
-      dt {
-        color: #333333;
-        font-weight: bold;
-      }
-      dd {
-        font-style: italic;
-        margin-top: 0.5em;
-        margin-bottom: 1.5em;
-        margin-left: 0px;
-        margin-right: 0px;
-      }
-      dl {
-        margin: 1.5em;
-      }
-    </style>
+    <link rel="stylesheet" href="../css/estilos.css">
   </head>
   <body>
       <h1>Tudo Sobre CSS</h1>
 
-      <p>
+      <p class="byline">
         por <a href="jane@doe.com" target="_blank">Jane Doe</a>
       </p>
 
-      <div>
+      <div class="figura">
         <img src="..\imagens\css.png" title="Uma Folha de Estilo em Cascata" alt="">
       </div>
 
       <blockquote>
         Se existe alguma coisa que caracteriza o que deu errado com a Web, é a proliferação da apresentação em detrimento da estrutura e conteúdo. ... Nós todos nos orgulhamos de nosso trabalho e queremos olhá-lo tão bom quanto pensamos que é. Já que a HTML nos deu muito pouco em termos de habilidades de apresentação interessantes, nós a forçamos para canais que queríamos viajar. Se tivéssemos bom estilo para começar, a corrupção dos fundamentos da Web não teria sido necessária. 
-        Por isso a CSS é tão importante. Finalmente, não temos somente a habilidade de descrever apresentações sofisticadas, podemos fazê-la em relação a documentos bem estruturados e despojados. Chega de tortura de marcação! Somente elementos "limpos" que são exibidos atraentemente por meio da CSS.
+        Por isso a CSS é tão importante. Finalmente, não temos somente a habilidade de descrever apresentações sofisticadas, podemos fazê-la em relação a documentos bem estruturados e despojados. Chega de tortura de marcação! Somente elementos "limpos" que são exibidos atraentemente por meio da CSS. <p class="figure">Eric Meyer, <a href="http://www.oreillynet.com/pub/a/network/2000/07/21/magazine/css_intro.html" target="_blank">"O Que Faz CSS Tão Bom?"</a></p>
       </blockquote>
-      <blockquote>Eric Meyer, <a href="http://www.oreillynet.com/pub/a/network/2000/07/21/magazine/css_intro.html" target="_blank">"O Que Faz CSS Tão Bom?"</a></blockquote>
+      <blockquote></blockquote>
       
-      <div>
+      <div id="toc">
         <ol>
           Conteúdo:
           <li><a href="#geral">Visão Geral</a></li>
@@ -94,32 +34,31 @@
       <p>No desenvolvimento Web, as folhas de estilo em cascata (CSS) é uma linguagem de estilo usada para descrever a apresentação de um documento escrito em linguagem de marcação. Sua aplicação mais comum é estilizar páginas da Web escritas em HTML e XHTML.</p>
 
       CSS é usada por autores e leitores de páginas web para:
-      <ul>
-        <li>configurar formato tipográfico:</li>
-        <ul>
-          <li>fontes (tipos de letras)</li>
-          <li>tamanho de fontes</li> 
-          <li>estilo de fontes, decoração e peso</li> 
-          <li>maiúsculas / minúsculas</li> 
-          <li>cor</li> 
-        </ul>
-        <li>configurar layout do texto:</li>
-        <ul>
-          <li>identação</li> 
-          <li>alinhamento</li> 
-          <li>letra e espaçamento entre palavras</li> 
-          <li>espaçamento entre linhas</li> 
-          <li>formatar links e "estados" de links (link, visited, hover, active)</li> 
-          <li>configurar estilos de "caixa" (i.e. box) em elementos em bloco:</li> 
-          <li>margens</li> 
-          <li>padding (espaço entre texto e borda)</li> 
-          <li>largura / altura</li> 
-          <li>configurar bordas</li> 
-          <li>configurar cores e imagens do plano de fundo (background) - e seus posicionamentos</li> 
-          <li>formatar listas</li> 
-          <li>criar layouts de páginas posicionando elementos</li> 
-        </ul>
-      </ul>
+      <dl>
+        <dt>configurar formato tipográfico:</dt>
+
+        <dd>fontes (tipos de letras)</dd>
+        <dd>tamanho de fontes</dd> 
+        <dd>estilo de fontes, decoração e peso</dd> 
+        <dd>maiúsculas / minúsculas</dd> 
+        <dd>cor</dd> 
+
+        <dt>configurar layout do texto:</dt>
+
+        <dd>identação</dd> 
+        <dd>alinhamento</dd> 
+        <dd>letra e espaçamento entre palavras</dd> 
+        <dd>espaçamento entre linhas</dd> 
+        <dd>formatar links e "estados" de links (link, visited, hover, active)</dd> 
+        <dd>configurar estilos de "caixa" (i.e. box) em elementos em bloco:</dd> 
+        <dd>margens</dd> 
+        <dd>padding (espaço entre texto e borda)</dd> 
+        <dd>largura / altura</dd> 
+        <dd>configurar bordas</dd> 
+        <dd>configurar cores e imagens do plano de fundo (background) - e seus posicionamentos</dd> 
+        <dd>formatar listas</dd> 
+        <dd>criar layouts de páginas posicionando elementos</dd> 
+      </dl>
 
       <p>CSS foi projetado primeiramente para possibilitar a separação do conteúdo do documento (escrito em HTML ou uma linguagem de marcação similar) da apresentação deste (escrito em CSS). Esta sepração pode melhorar a acessibilidade ao conteúdo, prover mais flexibilidade e controle na especificação de características da apresentação, e reduzir a complexidade e repetição na estrutura do conteúdo.</p> 
 
@@ -131,7 +70,7 @@
 
       <h2 id="sintaxe">Sintaxe</h2>
 
-      <p>CSS possui uma sintaxe simples, e usa uma série de palavras chaves em Inglês para especificar os nomes das inúmeras propriedades de estilo. Uma folha de estilo consiste de uma lista de regras. Cada regra ou conjunto de regras consiste de um ou mais [bold] seletores [bold] e uma [bold] declaração em bloco [bold] que contém uma lista de [bold] declarações [bold] separadas por ponto-e-vírgula e entre chaves.</p> 
+      <p>CSS possui uma sintaxe simples, e usa uma série de palavras chaves em Inglês para especificar os nomes das inúmeras propriedades de estilo. Uma folha de estilo consiste de uma lista de regras. Cada regra ou conjunto de regras consiste de um ou mais <strong>seletores</strong> e uma <strong>declaração em bloco</strong> que contém uma lista de <strong>declarações</strong> separadas por ponto-e-vírgula e entre chaves.</p> 
 
       <img src="..\imagens\style-rule.gif" alt="">
 
@@ -145,7 +84,7 @@
 
       <p>Declarações consistem de um par 'propriedade-valor' que define os atributos de apresentação que uma regra de estilo se aplica. As propriedades da CSS são definidas na especificação relevante. Elas tipicamente têm uma lista prédefinida de valores possíveis, que podem ser valores unitários (números, percentagens, pixels), valores de cor, URLs, e várias palavras chaves.</p>
 
-      <p>Declarações individuais dentro de uma regra de estilo são separadas por um 'ponto-e-vírgula'. As propriedades da declaração são correspondidas a seus valores com um 'dois pontos'. Certas propriedades abreviadas, tais como font, background, e margem, permitem múltiplos valores que tomam o lugar de propriedades mais específicas. Por exemplo, margin-top: 20px; margin-right: 10px; margin-bottom: 20px; margin-left: 10px; podem ser escritas como margin: 20px 10px; .</p>
+      <p>Declarações individuais dentro de uma regra de estilo são separadas por um 'ponto-e-vírgula'. As propriedades da declaração são correspondidas a seus valores com um 'dois pontos'. Certas propriedades abreviadas, tais como font, background, e margem, permitem múltiplos valores que tomam o lugar de propriedades mais específicas. Por exemplo, <code>margin-top: 20px;</code> <code>margin-right: 10px;</code> <code>margin-bottom: 20px;</code> <code>margin-left: 10px;</code> podem ser escritas como <code>margin: 20px 10px;</code> .</p>
 
       <h2 id="fontes">Fontes de Folhas de Estilo</h2>
 
