@@ -1,0 +1,20 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Exercicio 1</title>
+</head>
+<body>
+  <label for="valor">Insira a temperatura em Fahrenheit:</label>
+  <input id="valor1" type="number"> 
+  <button onclick="fahrenheitToCelsius()">Converter</button>
+</body>
+</html>
+<script>
+  function fahrenheitToCelsius() {
+    let tempF = document.getElementById("valor1");
+    let tempC = (parseInt(tempF.value, 10) - 32) * 5/9;
+    alert(tempC);
+  }
+</script>
